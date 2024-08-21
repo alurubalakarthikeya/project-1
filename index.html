@@ -30,9 +30,30 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("bg-image.jpg");
   min-height: 100%;
+ background: linear-gradient(270deg, #0f2027, #203a43, #2c5364, #1c2833, #17202a);
+    animation: gradientAnimation 15s ease infinite;
 }
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .w3-bar .w3-button {
   padding: 16px;
